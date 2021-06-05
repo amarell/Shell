@@ -61,6 +61,9 @@ int main(){
 					continue;
 				} else {
 					int n = atoi(args[1]);
+					if(n == 0){
+						printf("Invalid command :(\n");
+					}
 					add_history_with_id(s);
 					print_last_n_commands(n);
 					continue;

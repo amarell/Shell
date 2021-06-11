@@ -74,16 +74,6 @@ int main(){
 				continue;
 			}
 		}
-/*
-		if(strcmp(args[0],"history")==0 && strcmp(args[1], "-s")==0){
-			int new_size = atoi(args[2]);
-			stifle_history(new_size);
-			continue;
-		}
-		else{
-			printf("\n\n%s \n\n", args[0]);
-			return 0;
-		}*/
 		if(strcmp(args[0], "print_hist")==0){
 			add_history_with_id(s);
 			print_history();
@@ -222,8 +212,4 @@ void print_last_n_commands(int n){
 	}
 }
 
-/*void print_nth_command(int n){
-	mylist = history_list();
-	printf("%s\n", mylist[n]->line);
-}*/
 
